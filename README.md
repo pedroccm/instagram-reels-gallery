@@ -1,8 +1,10 @@
+<sub>**English** · [Português 🇧🇷](README.pt-BR.md)</sub>
+
 # 🎬 Instagram Reels Gallery
 
 > Every Reel your friends dumped in the group chat, turned into one beautiful, browsable
 > wall. Extract the Reels shared in an Instagram **DM group** and build a static gallery
-> site — filter by who shared, sort by date, click to open.
+> site, filter by who shared, sort by date, click to open.
 
 No username/password: it uses **your own session cookie**. Output is plain static files,
 so you can open them locally or host them anywhere.
@@ -11,20 +13,21 @@ so you can open them locally or host them anywhere.
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![instagrapi](https://img.shields.io/badge/api-instagrapi-purple)
 
-A dark, glassy grid of 9:16 cards — each reel as a tappable thumbnail with the sharer's
-avatar, the date, and a caption snippet. Filter chips per person up top, newest/oldest
-toggle, click to open on Instagram.
+![Gallery preview](preview.png)
+
+> *Sample gallery with placeholder data, filter chips per person, newest/oldest toggle,
+> 9:16 cards, click to open on Instagram.*
 
 ---
 
 ## 🚀 Features
 
-- **Reads a DM group** — pulls every Reel/post shared in the conversation.
-- **Knows who shared what** — each card shows the friend who posted it; filter by person.
-- **Self-contained site** — thumbnails are downloaded locally (Instagram CDN links expire),
+- **Reads a DM group**: pulls every Reel/post shared in the conversation.
+- **Knows who shared what**: each card shows the friend who posted it; filter by person.
+- **Self-contained site**: thumbnails are downloaded locally (Instagram CDN links expire),
   so the gallery keeps working forever, even offline via `file://`.
-- **Cookie auth** — no password; uses your `sessionid`.
-- **One-command deploy** — optional Netlify upload, or drop it on any static host.
+- **Cookie auth**: no password; uses your `sessionid`.
+- **One-command deploy**: optional Netlify upload, or drop it on any static host.
 
 ---
 
@@ -105,7 +108,7 @@ Then say *"build a gallery from the reels in my group 'the squad'"*.
 
 ## 📝 Notes & limits
 
-- Uses Instagram's **private API** (instagrapi) — technically against the ToS. Block risk
+- Uses Instagram's **private API** (instagrapi), technically against the ToS. Block risk
   exists but is lower with a cookie than with user/password. Keep the delays in place.
 - `reels.json` and `site/` hold private group content and are **git-ignored** by default.
 - Story shares are skipped (they're ephemeral).
@@ -114,4 +117,4 @@ Then say *"build a gallery from the reels in my group 'the squad'"*.
 
 ## 📄 License
 
-MIT — see [LICENSE](LICENSE).
+MIT, see [LICENSE](LICENSE).

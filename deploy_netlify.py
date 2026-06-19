@@ -6,7 +6,7 @@ Usage:
 
 Token: https://app.netlify.com/user/applications#personal-access-tokens
 Optionally set NETLIFY_ACCOUNT to a specific account slug; otherwise your
-default account is used. This step is optional — `site/` is plain static files,
+default account is used. This step is optional, `site/` is plain static files,
 so you can also drag-drop it on Netlify, push to GitHub Pages, etc.
 """
 import io
