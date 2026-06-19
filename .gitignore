@@ -1,0 +1,15 @@
+# session / secrets
+.sessionid
+.env
+
+# private group content (generated)
+reels.json
+reels-*.json
+sample_thread.json
+site/
+site-*/
+
+# runtime junk
+*.log
+__pycache__/
+*.pyc
